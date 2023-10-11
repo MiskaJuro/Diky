@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Styl pro změnu pozadí */
+        body {
+            animation: changeBackground 10s linear infinite; /* Animace pro změnu pozadí každých 10 sekund */
+            border: 5px solid black; /* Ohraničení iframe */
+        }
+        
+        @keyframes changeBackground {
+            0% {
+                background-color: lightblue;
+            }
+            25% {
+                background-color: lightgreen;
+            }
+            50% {
+                background-color: lightcoral;
+            }
+            75% {
+                background-color: lightsalmon;
+            }
+            100% {
+                background-color: lightpink;
+            }
+        }
+        
+        /* Styl pro nápis "Děkuju :)" */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: white; /* Změňte barvu textu dle vašich preferencí */
+            padding: 20px;
+        }
+        /* Styl pro rámeček iframe */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Poměr stran pro zachování správného poměru stran videa */
+        }
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Děkuju :)</h1>
+    <div class="iframe-container">
+        <iframe src="https://miskajuro.github.io/MiskaJuro-Web" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
